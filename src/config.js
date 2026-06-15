@@ -8,6 +8,8 @@ export function isFeedbackFormEnabled(url = FEEDBACK_FORM_URL) {
     trimmedUrl.length > 0 &&
     !trimmedUrl.includes("PLACEHOLDER") &&
     !trimmedUrl.includes("example.com") &&
+    !trimmedUrl.includes("[") &&
+    !trimmedUrl.includes("]") &&
     /^https?:\/\//.test(trimmedUrl)
   );
 }
