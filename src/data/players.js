@@ -241,7 +241,9 @@ export const players = [
     teams: [
       { team: "New Orleans Hornets", years: "2012-2013" },
       { team: "New Orleans Pelicans", years: "2013-2019" },
-      { team: "Los Angeles Lakers", years: "2019-present" },
+      { team: "Los Angeles Lakers", years: "2019-2025" },
+      { team: "Dallas Mavericks", years: "2025-2026"},
+      { team: "Washington Wizards", years: "2026-present"},
     ],
     hints: [
       "Drafted first overall in 2012.",
@@ -260,7 +262,9 @@ export const players = [
       { team: "Houston Rockets", years: "2012-2021" },
       { team: "Brooklyn Nets", years: "2021-2022" },
       { team: "Philadelphia 76ers", years: "2022-2023" },
-      { team: "Los Angeles Clippers", years: "2023-present" },
+      { team: "Los Angeles Clippers", years: "2023-2026" },
+      { team: "Cleveland Cavaliers", years: "2026-present"},
+
     ],
     hints: [
       "Won Sixth Man of the Year in OKC.",
@@ -280,7 +284,8 @@ export const players = [
       { team: "Washington Wizards", years: "2020-2021" },
       { team: "Los Angeles Lakers", years: "2021-2023" },
       { team: "Los Angeles Clippers", years: "2023-2024" },
-      { team: "Denver Nuggets", years: "2024-present" },
+      { team: "Denver Nuggets", years: "2024-2025" },
+      { team: "Sacramento Kings", years: "2025-present"}
     ],
     hints: [
       "Known for triple-doubles.",
@@ -296,7 +301,8 @@ export const players = [
     position: "PG",
     teams: [
       { team: "Portland Trail Blazers", years: "2012-2023" },
-      { team: "Milwaukee Bucks", years: "2023-present" },
+      { team: "Milwaukee Bucks", years: "2023-2025" },
+      { team: "Portlant Trail Blazers", years: "2025-present"}
     ],
     hints: [
       "Drafted from Weber State",
@@ -465,7 +471,8 @@ export const players = [
     difficulty: "easy",
     position: "PG",
     teams: [
-      { team: "Atlanta Hawks", years: "2018-present" },
+      { team: "Atlanta Hawks", years: "2018-2026" },
+      { team: "Washington Wizards", years: "2026-present"}
     ],
     hints: [
       "Was traded on draft night.",
