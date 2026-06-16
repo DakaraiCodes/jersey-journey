@@ -49,7 +49,7 @@ export const players = [
     hints: [
       "Drafted by Seattle before the franchise moved.",
       "Won Finals MVPs with Golden State.",
-      "Known as KD.",
+      "Known as easymoneysniper.",
     ],
   },
   {
@@ -99,9 +99,9 @@ export const players = [
       { team: "Boston Celtics", years: "2010-2011" },
     ],
     hints: [
-      "Dominant center known as Shaq.",
-      "Won three straight Finals MVPs with the Lakers.",
       "Played for multiple teams late in his career.",
+      "Won three straight Finals MVPs with the Lakers.",
+      "Dominant center known as Shaq.",
     ],
   },
   {
@@ -182,7 +182,7 @@ export const players = [
       { team: "Milwaukee Bucks", years: "2013-present" },
     ],
     hints: [
-      "Known as the Greek Freak.",
+      "Drafted outside the lottery in 2013.",
       "Won a championship with Milwaukee.",
       "Multiple-time MVP.",
     ],
@@ -197,7 +197,7 @@ export const players = [
       { team: "Denver Nuggets", years: "2015-present" },
     ],
     hints: [
-      "Known as The Joker.",
+      "Drafted in the second round despite eventually becoming a franchise player.",
       "Elite passing center.",
       "Won Denver's first NBA championship.",
     ],
@@ -263,9 +263,9 @@ export const players = [
       { team: "Los Angeles Clippers", years: "2023-present" },
     ],
     hints: [
-      "Known as The Beard.",
       "Won Sixth Man of the Year in OKC.",
       "Had his MVP peak in Houston.",
+      "Known as The Beard.",
     ],
   },
   {
@@ -299,9 +299,9 @@ export const players = [
       { team: "Milwaukee Bucks", years: "2023-present" },
     ],
     hints: [
-      "Known as Dame Time.",
-      "Longtime Portland star.",
-      "Elite deep-range shooter.",
+      "Drafted from Weber State",
+      "Scored 70+ points in a regular season game.",
+      "Won Rookie of the Year in 2013.",
     ],
   },
   {
@@ -316,9 +316,9 @@ export const players = [
       { team: "Los Angeles Clippers", years: "2019-present" },
     ],
     hints: [
-      "Known as The Klaw.",
-      "Won Finals MVP with two franchises.",
-      "Won Toronto's first championship.",
+      "Drafted outside the lottery in 2011.",
+      "Won multiple Defensive Player of the Year awards.",
+      "Has multiple Finals MVPs.",
     ],
   },
   {
@@ -334,9 +334,9 @@ export const players = [
       { team: "Philadelphia 76ers", years: "2024-present" },
     ],
     hints: [
-      "Known as PG-13.",
-      "Started his career with Indiana.",
-      "Played with Kawhi on the Clippers.",
+      "Drafted 10th overall in 2010.",
+      "Has made multiple All-Defensive teams.",
+      "Finished top 3 in MVP voting once",
     ],
   },
   {
@@ -352,9 +352,9 @@ export const players = [
       { team: "Dallas Mavericks", years: "2023-present" },
     ],
     hints: [
-      "Hit a famous Finals shot in 2016.",
-      "Known for elite handles.",
-      "Known as Uncle Drew.",
+      "Played only a short college season before entering the draft.",
+      "Drafted 1st overall in 2011",
+      "Has averaged over 25 points per game in multiple seasons.",
     ],
   },
   {
@@ -373,9 +373,9 @@ export const players = [
       { team: "San Antonio Spurs", years: "2024-present" },
     ],
     hints: [
-      "Known as CP3.",
-      "One of the best passers ever.",
-      "Played for many teams late in his career.",
+      "Drafted after playing college basketball at Wake Forest.",
+      "Has made over 10 All-Star teams.",
+      "Has led the league in both assists and steals.",
     ],
   },
   {
@@ -388,9 +388,9 @@ export const players = [
       { team: "Philadelphia 76ers", years: "2014-present" },
     ],
     hints: [
-      "Known as The Process.",
-      "MVP center.",
-      "Drafted by Philadelphia.",
+      "Missed his first two NBA seasons before debuting.",
+      "Won a scoring title as a center.",
+      "Drafted 3rd overall in 2014.",
     ],
   },
   {
@@ -407,9 +407,9 @@ export const players = [
       { team: "Golden State Warriors", years: "2025-present" },
     ],
     hints: [
-      "Known as Jimmy Buckets.",
-      "Led Miami to multiple Finals runs.",
-      "Started his career in Chicago.",
+      "Drafted 30th overall in 2011.",
+      "Won Most Improved Player in 2015.",
+      "Has made multiple All-Defensive teams.",
     ],
   },
   {
@@ -422,9 +422,9 @@ export const players = [
       { team: "Phoenix Suns", years: "2015-present" },
     ],
     hints: [
-      "Scored 70 points in a game.",
-      "Star guard for Phoenix.",
-      "Known as Book.",
+      "Played one season of college basketball.",
+      "Drafted outside the top 10.",
+      "Reached 10,000 career points before age 27.",
     ],
   },
   {
@@ -438,9 +438,9 @@ export const players = [
       { team: "Cleveland Cavaliers", years: "2022-present" },
     ],
     hints: [
-      "Known as Spida.",
-      "Started with Utah.",
-      "Later became a star guard in Cleveland.",
+      "Drafted outside the top 10.",
+      "Became a franchise-level scorer early in his career.",
+      "Has scored over 50 points in multiple playoff games.",
     ],
   },
   {
@@ -453,9 +453,9 @@ export const players = [
       { team: "Memphis Grizzlies", years: "2019-present" },
     ],
     hints: [
-      "Explosive point guard.",
-      "Drafted second overall in 2019.",
-      "Star for Memphis.",
+      "Was not the first pick in his draft class",
+      "Became an All-Star before turning 23.",
+      "Led his team to a top-two conference seed early in his career.",
     ],
   },
   {
@@ -468,9 +468,9 @@ export const players = [
       { team: "Atlanta Hawks", years: "2018-present" },
     ],
     hints: [
-      "Known as Ice Trae.",
-      "Elite deep shooter and passer.",
-      "Draft-night trade connected him with Luka Doncic.",
+      "Was traded on draft night.",
+      "Became a franchise lead guard early in his career",
+      "Has led the league in total assists.",
     ],
   },
   {
@@ -498,9 +498,9 @@ export const players = [
       { team: "Charlotte Hornets", years: "2020-present" },
     ],
     hints: [
-      "Point guard for Charlotte.",
-      "Won Rookie of the Year.",
-      "Brother of Lonzo Ball.",
+      "Did not play college basketball.",
+      "Was drafted after Anthony Edwards.",
+      "Won Rookie of the Year as a guard.",
     ],
   },
   {
@@ -514,9 +514,9 @@ export const players = [
       { team: "Oklahoma City Thunder", years: "2019-present" },
     ],
     hints: [
-      "Known as SGA.",
-      "Started with the Clippers.",
-      "Became a superstar in Oklahoma City.",
+      "Played one college season at Kentucky.",
+      "Was drafted outside the top 10.",
+      "Has averaged over 30 points per game in a season.",
     ],
   },
   {
@@ -529,9 +529,9 @@ export const players = [
       { team: "Minnesota Timberwolves", years: "2020-present" },
     ],
     hints: [
-      "Known as Ant-Man.",
-      "Drafted first overall in 2020.",
-      "Star guard for Minnesota.",
+      "Played college basketball in the SEC.",
+      "Was selected before LaMelo Ball and Tyrese Haliburton.",
+      "Reached the conference finals before turning 23.",
     ],
   },
   {
@@ -544,9 +544,9 @@ export const players = [
       { team: "San Antonio Spurs", years: "2023-present" },
     ],
     hints: [
-      "Known as Wemby.",
-      "Drafted first overall in 2023.",
-      "French big man with guard skills.",
+      "Played professionally before entering the NBA.",
+      "Had a rookie season with elite block numbers.",
+      "Recorded a 5x5 game in under 31 minutes",
     ],
   },
   {
@@ -609,9 +609,9 @@ export const players = [
       { team: "Los Angeles Lakers", years: "1968-1973" },
     ],
     hints: [
-      "Scored 100 points in a game.",
-      "One of the most dominant centers ever.",
-      "Played for the Warriors, 76ers, and Lakers.",
+      "Drafted as a territorial pick.",
+      "Led the league in assists once despite being a center.",
+      "Won both Rookie of the Year and MVP in the same season.",
     ],
   },
   {
@@ -624,9 +624,9 @@ export const players = [
       { team: "Boston Celtics", years: "1956-1969" },
     ],
     hints: [
-      "Won 11 championships.",
-      "Celtics legend.",
-      "One of the greatest defenders ever.",
+      "Was traded on draft night.",
+      "Won an Olympic gold medal before his NBA debut.",
+      "Became the league’s first Black head coach.",
     ],
   },
   {
