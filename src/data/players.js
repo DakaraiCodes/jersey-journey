@@ -14,7 +14,7 @@ export const players = [
     hints: [
       "Drafted first overall in 2003.",
       "Won championships with Miami, Cleveland, and Los Angeles.",
-      "Known as King James.",
+      "Entered the league straight from an Akron-area high school.",
     ],
   },
   {
@@ -28,8 +28,8 @@ export const players = [
     ],
     hints: [
       "Changed the NBA with his shooting range.",
-      "Multiple-time MVP.",
-      "Spent his entire career with Golden State.",
+      "His NCAA tournament run made Davidson nationally visible.",
+      "Became the face of a three-point revolution in the Bay.",
     ],
   },
   {
@@ -49,7 +49,7 @@ export const players = [
     hints: [
       "Drafted by Seattle before the franchise moved.",
       "Won Finals MVPs with Golden State.",
-      "Known as easymoneysniper.",
+      "A near-seven-foot scoring wing with guard-level shot creation.",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const players = [
     hints: [
       "Spent his whole career with the Lakers.",
       "Won five championships.",
-      "Known as the Black Mamba.",
+      "Entered the NBA from high school after a draft-night trade.",
     ],
   },
   {
@@ -81,7 +81,7 @@ export const players = [
     hints: [
       "Won six championships with Chicago.",
       "Also played for Washington.",
-      "Known as Air Jordan.",
+      "Briefly wore No. 45 after returning from his first retirement.",
     ],
   },
   {
@@ -101,7 +101,7 @@ export const players = [
     hints: [
       "Played for multiple teams late in his career.",
       "Won three straight Finals MVPs with the Lakers.",
-      "Dominant center known as Shaq.",
+      "A No. 1 pick whose size and power bent defenses immediately.",
     ],
   },
   {
@@ -115,7 +115,7 @@ export const players = [
     ],
     hints: [
       "Spent his whole career with San Antonio.",
-      "Known as The Big Fundamental.",
+      "Arrived after four years at Wake Forest.",
       "Won five championships.",
     ],
   },
@@ -129,7 +129,7 @@ export const players = [
       { team: "Dallas Mavericks", years: "1998-2019" },
     ],
     hints: [
-      "Spent his whole career with Dallas.",
+      "A 7-foot European scorer who redefined the stretch forward archetype.",
       "Led the Mavericks to the 2011 title.",
       "Known for the one-legged fadeaway.",
     ],
@@ -147,7 +147,7 @@ export const players = [
       { team: "Miami Heat", years: "2018-2019" },
     ],
     hints: [
-      "Most associated with the Miami Heat.",
+      "An elite slashing guard who became a Miami franchise icon.",
       "Won three championships.",
       "Had short stops with Chicago and Cleveland.",
     ],
@@ -169,7 +169,7 @@ export const players = [
     hints: [
       "Drafted in the famous 2003 class.",
       "Starred for Denver and New York.",
-      "Known as Melo.",
+      "Won an NCAA title before his NBA debut.",
     ],
   },
   {
@@ -228,7 +228,7 @@ export const players = [
     ],
     hints: [
       "Drafted third overall in 2017.",
-      "Star wing for Boston.",
+      "A polished scoring wing who played one college season at Duke.",
       "Won a title with the Celtics.",
     ],
   },
@@ -247,7 +247,7 @@ export const players = [
     ],
     hints: [
       "Drafted first overall in 2012.",
-      "Known as The Brow.",
+      "A shot-blocking big with rare guard-like skills.",
       "Won a title with the Lakers.",
     ],
   },
@@ -269,7 +269,7 @@ export const players = [
     hints: [
       "Won Sixth Man of the Year in OKC.",
       "Had his MVP peak in Houston.",
-      "Known as The Beard.",
+      "Built a signature scoring style around step-backs and free throws.",
     ],
   },
   {
@@ -290,7 +290,7 @@ export const players = [
     hints: [
       "Known for triple-doubles.",
       "Won MVP in Oklahoma City.",
-      "Known as Brodie.",
+      "One of the league's most explosive downhill guards.",
     ],
   },
   {
@@ -567,9 +567,9 @@ export const players = [
       { team: "Los Angeles Lakers", years: "1996" },
     ],
     hints: [
-      "Legendary Lakers point guard.",
-      "Leader of Showtime.",
-      "One of the greatest passers ever.",
+      "A 6-foot-9 lead guard who changed what a point guard could look like.",
+      "Led a fast-break dynasty in Los Angeles.",
+      "Returned briefly as a player in 1996.",
     ],
   },
   {
@@ -582,9 +582,9 @@ export const players = [
       { team: "Boston Celtics", years: "1979-1992" },
     ],
     hints: [
-      "Celtics legend.",
-      "Rival of Magic Johnson.",
-      "Elite shooter and trash talker.",
+      "A small-town Indiana forward with elite shooting touch.",
+      "Part of the defining Lakers-Celtics rivalry of the 1980s.",
+      "Won three straight regular-season MVP awards.",
     ],
   },
   {
@@ -598,9 +598,9 @@ export const players = [
       { team: "Los Angeles Lakers", years: "1975-1989" },
     ],
     hints: [
-      "Famous for the skyhook.",
+      "Built his signature scoring move around a high-release hook shot.",
       "Won titles with Milwaukee and Los Angeles.",
-      "One of the NBA's all-time scoring legends.",
+      "Played deep into his 40s while remaining an elite center.",
     ],
   },
   {
@@ -647,9 +647,9 @@ export const players = [
       { team: "Toronto Raptors", years: "2001-2002" },
     ],
     hints: [
-      "Known as The Dream.",
+      "Played college basketball in Houston before staying in the city as a pro.",
       "Won back-to-back titles with Houston.",
-      "Famous for the Dream Shake.",
+      "Had some of the most polished footwork ever for a center.",
     ],
   },
   {
@@ -666,8 +666,8 @@ export const players = [
       { team: "Philadelphia 76ers", years: "2009-2010" },
     ],
     hints: [
-      "Known as The Answer.",
-      "Iconic 76ers guard.",
+      "A small guard who carried a massive scoring load.",
+      "Became one of Philadelphia's defining modern players.",
       "Won MVP in 2001.",
     ],
   },
@@ -684,7 +684,7 @@ export const players = [
       { team: "Minnesota Timberwolves", years: "2015-2016" },
     ],
     hints: [
-      "Known as The Big Ticket.",
+      "A high-school-to-NBA forward with all-time defensive intensity.",
       "Won a title with Boston.",
       "Started and ended with Minnesota.",
     ],
@@ -701,9 +701,9 @@ export const players = [
       { team: "Houston Rockets", years: "1996-2000" },
     ],
     hints: [
-      "Known as Sir Charles.",
+      "An undersized power forward who rebounded like a center.",
       "MVP with Phoenix.",
-      "Undersized but dominant power forward.",
+      "Reached the Finals once but never won a championship.",
     ],
   },
   {
@@ -741,7 +741,7 @@ export const players = [
       { team: "Atlanta Hawks", years: "2018-2020" },
     ],
     hints: [
-      "Known as Vinsanity.",
+      "A high-flying wing whose dunk contest performance became iconic.",
       "One of the greatest dunkers ever.",
       "Played across four decades.",
     ],
@@ -762,9 +762,9 @@ export const players = [
       { team: "San Antonio Spurs", years: "2013" },
     ],
     hints: [
-      "Known as T-Mac.",
+      "A smooth scoring wing who peaked as one of the league's toughest covers.",
       "Scoring champion with Orlando.",
-      "Famous for 13 points in 35 seconds.",
+      "Had a legendary late-game scoring burst against San Antonio.",
     ],
   },
   {
@@ -798,8 +798,8 @@ export const players = [
       { team: "Los Angeles Clippers", years: "2015-2017" },
     ],
     hints: [
-      "Known as The Truth.",
-      "Celtics legend.",
+      "A methodical scoring wing who spent most of his prime in Boston.",
+      "Survived a major roster reset before reaching the mountaintop.",
       "Won Finals MVP in 2008.",
     ],
   },
@@ -815,7 +815,7 @@ export const players = [
     ],
     hints: [
       "Part of Miami's Big Three.",
-      "Started as a star in Toronto.",
+      "A left-handed big who became a key part of Miami's spacing.",
       "Won two championships with Miami.",
     ],
   },
@@ -835,7 +835,7 @@ export const players = [
     hints: [
       "Spanish big man.",
       "Won titles with Kobe's Lakers.",
-      "Started in Memphis.",
+      "His younger brother also became an NBA All-Star center.",
     ],
   },
   {
@@ -856,8 +856,8 @@ export const players = [
       { team: "Los Angeles Lakers", years: "2021-2022" },
     ],
     hints: [
-      "Known as Superman.",
-      "Dominant defensive center in Orlando.",
+      "A dominant rim-running center who anchored elite Orlando defenses.",
+      "Won three straight Defensive Player of the Year awards.",
       "Won a title with the Lakers.",
     ],
   },
@@ -878,7 +878,7 @@ export const players = [
     ],
     hints: [
       "Youngest MVP in NBA history.",
-      "Chicago hometown star.",
+      "A Chicago-born guard whose first step changed games instantly.",
       "Known for explosive athleticism.",
     ],
   },
@@ -895,8 +895,8 @@ export const players = [
       { team: "Boston Celtics", years: "2022-2023" },
     ],
     hints: [
-      "Famous dunker.",
-      "Started with Lob City Clippers.",
+      "A powerful leaper who became a primary scorer early with the Clippers.",
+      "Won Rookie of the Year after missing his first NBA season.",
       "Later reinvented his game in Detroit.",
     ],
   },
@@ -927,8 +927,8 @@ export const players = [
     ],
     hints: [
       "Argentinian guard.",
-      "Famous for the eurostep.",
-      "Spent his whole NBA career with San Antonio.",
+      "A left-handed creator with a chaotic, fearless driving style.",
+      "Came off the bench often despite closing many important games.",
     ],
   },
   {
@@ -976,7 +976,7 @@ export const players = [
     ],
     hints: [
       "Midrange scoring specialist.",
-      "Longtime Raptors star.",
+      "Carried a heavy scoring role for Toronto before heading west.",
       "Traded in the Kawhi Leonard deal.",
     ],
   },
@@ -994,9 +994,9 @@ export const players = [
       { team: "Philadelphia 76ers", years: "2024-present" },
     ],
     hints: [
-      "Raptors legend.",
+      "A rugged lead guard who became central to Toronto's best era.",
       "Won a title in 2019.",
-      "Started with Memphis.",
+      "Opened his career in Memphis before finding a larger role.",
     ],
   },
   {
@@ -1014,7 +1014,7 @@ export const players = [
     hints: [
       "Elite defensive guard.",
       "Won titles with Milwaukee and Boston.",
-      "Started in Philadelphia.",
+      "First became an All-Star before his New Orleans years.",
     ],
   },
   {
@@ -1029,7 +1029,7 @@ export const players = [
     ],
     hints: [
       "Elite passer.",
-      "Started with Sacramento.",
+      "A tall guard whose release mechanics look unusual but effective.",
       "Became an All-Star in Indiana.",
     ],
   },
@@ -1080,7 +1080,7 @@ export const players = [
     hints: [
       "Finnish forward.",
       "Became an All-Star in Utah.",
-      "Started with Chicago.",
+      "Took a major leap after being included in a Donovan Mitchell trade package.",
     ],
   },
   {
@@ -1096,8 +1096,8 @@ export const players = [
       { team: "Boston Celtics", years: "2023-present" },
     ],
     hints: [
-      "Known as KP.",
-      "Stretch big from Latvia.",
+      "A 7-foot-3 stretch big from Latvia.",
+      "Was booed on draft night before becoming a New York building block.",
       "Won a title with Boston.",
     ],
   },
@@ -1116,7 +1116,7 @@ export const players = [
     ],
     hints: [
       "Veteran big man.",
-      "Started with Atlanta.",
+      "Played college basketball on back-to-back NCAA title teams.",
       "Returned to Boston after stops in Philly and OKC.",
     ],
   },
@@ -1179,7 +1179,7 @@ export const players = [
       { team: "Minnesota Timberwolves", years: "2022-present" },
     ],
     hints: [
-      "Known as the Stifle Tower.",
+      "A French rim protector who anchored elite regular-season defenses.",
       "Multiple-time Defensive Player of the Year.",
       "Traded from Utah to Minnesota.",
     ],
@@ -1216,7 +1216,7 @@ export const players = [
     hints: [
       "Left-handed power forward.",
       "Became an All-Star with New York.",
-      "Started his career with the Lakers.",
+      "Won Most Improved Player after a major scoring leap.",
     ],
   },
   {
@@ -1231,7 +1231,7 @@ export const players = [
     ],
     hints: [
       "Defensive wing.",
-      "Started in Toronto.",
+      "Played college basketball at Indiana.",
       "Traded to New York.",
     ],
   },
@@ -1246,7 +1246,7 @@ export const players = [
       { team: "Indiana Pacers", years: "2024-present" },
     ],
     hints: [
-      "Known as Spicy P.",
+      "A Cameroonian forward who developed from energy role player to All-NBA scorer.",
       "Won a title with Toronto.",
       "Traded to Indiana.",
     ],
@@ -1280,7 +1280,7 @@ export const players = [
     ],
     hints: [
       "Two-time dunk contest champion.",
-      "Started in Minnesota.",
+      "Entered the league as part of a draft-night trade involving Kevin Love.",
       "Known for athletic scoring.",
     ],
   },
@@ -1348,7 +1348,7 @@ export const players = [
       { team: "Brooklyn Nets", years: "2025-present" },
     ],
     hints: [
-      "Known as D-Lo.",
+      "A left-handed guard with a smooth pull-up game.",
       "Became an All-Star with Brooklyn.",
       "Had two separate Lakers stints.",
     ],
@@ -1455,8 +1455,8 @@ export const players = [
       { team: "Boston Celtics", years: "2021" },
     ],
     hints: [
-      "Known as Iso Joe.",
-      "Most associated with Atlanta's playoff teams.",
+      "A big scoring guard who made isolation offense his calling card.",
+      "Spent his prime as the main creator for Atlanta playoff teams.",
       "Returned briefly to Boston two decades after his rookie season.",
     ],
   },
@@ -1500,7 +1500,7 @@ export const players = [
       { team: "Cleveland Cavaliers", years: "2022" },
     ],
     hints: [
-      "Known as Playoff Rondo.",
+      "A pass-first guard whose playoff reputation outpaced his regular-season scoring.",
       "Won titles with Boston and the Lakers.",
       "Elite passer with a long journeyman second act.",
     ],
@@ -1518,7 +1518,7 @@ export const players = [
       { team: "San Antonio Spurs", years: "2003-2008" },
     ],
     hints: [
-      "Known as Big Shot Bob.",
+      "A role player remembered for late-game playoff daggers.",
       "Won seven championships without playing for Boston.",
       "Hit clutch playoff shots for multiple title teams.",
     ],
@@ -1581,7 +1581,7 @@ export const players = [
       { team: "Milwaukee Bucks", years: "2016-2018" },
     ],
     hints: [
-      "Known as The Jet.",
+      "A quick-trigger guard with a runway celebration.",
       "Won Sixth Man of the Year in Dallas.",
       "Helped the Mavericks win the 2011 title.",
     ],

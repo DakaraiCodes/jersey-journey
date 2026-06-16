@@ -36,18 +36,23 @@ export function StartScreen({ selectedMode, onModeChange, onStartRun }) {
         </div>
 
         <div className="mode-grid">
-          {RUN_MODES.map((mode) => (
-            <button
-              type="button"
-              key={mode.id}
-              className={selectedMode === mode.id ? "mode-card active" : "mode-card"}
-              onClick={() => onModeChange(mode.id)}
-            >
-              <span>{mode.name}</span>
-              <strong>{mode.tagline}</strong>
-              <small>{mode.description}</small>
-            </button>
-          ))}
+          {RUN_MODES.map((mode) => {
+            const isSelected = selectedMode === mode.id;
+
+            return (
+              <button
+                type="button"
+                key={mode.id}
+                className={isSelected ? "mode-card active" : "mode-card"}
+                aria-pressed={isSelected}
+                onClick={() => onModeChange(mode.id)}
+              >
+                <span>{mode.name}</span>
+                <strong>{mode.tagline}</strong>
+                <small>{mode.description}</small>
+              </button>
+            );
+          })}
         </div>
 
         <button type="button" className="start-run-button" onClick={onStartRun}>
