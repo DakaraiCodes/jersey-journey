@@ -209,7 +209,8 @@ export const players = [
     difficulty: "easy",
     position: "PG",
     teams: [
-      { team: "Dallas Mavericks", years: "2018-present" },
+      { team: "Dallas Mavericks", years: "2018-2025" },
+      { team: "Los Angeles Lakers", years: "2025-2026"},
     ],
     hints: [
       "Entered the NBA after starring in Europe.",
