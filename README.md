@@ -1,5 +1,9 @@
 # Jersey Journey
 
+Feel free to give it a try and leave feedback, please:
+
+Live Link https://jerseyjourney.vercel.app/
+
 Jersey Journey is a basketball career-path trivia game. Players are shown a mystery player's team history and must guess the player before hints and wrong guesses reduce the round score.
 
 The project is built as a polished browser game with multiple run modes, streak tracking, scoring pressure, hint reveals, and a replayable data-driven player pool.
