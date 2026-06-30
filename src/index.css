@@ -125,7 +125,17 @@ input:disabled {
 .shell.shell-start::before {
   background:
     radial-gradient(circle at 48% 16%, rgba(246, 196, 83, 0.12), transparent 26rem),
-    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+    radial-gradient(circle at 33% 58%, rgba(45, 212, 191, 0.1), transparent 26rem),
+    linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.035), transparent);
+  background-size:
+    auto,
+    auto,
+    48px 48px,
+    48px 48px,
+    auto;
+  mask-image: linear-gradient(180deg, black 0 72%, transparent 100%);
   opacity: 0.9;
 }
 
@@ -318,30 +328,15 @@ input:disabled {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 22px;
-  overflow: hidden;
   border: 0;
   border-radius: 0;
   padding: clamp(18px, 3vw, 42px) 0 clamp(18px, 3vw, 42px);
   background:
-    radial-gradient(circle at 50% 42%, rgba(45, 212, 191, 0.12), transparent 19rem),
-    linear-gradient(115deg, rgba(246, 196, 83, 0.08), transparent 38%);
+    radial-gradient(circle at 50% 42%, rgba(45, 212, 191, 0.07), transparent 20rem);
 }
 
 .start-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(226, 232, 240, 0.08);
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(180deg, black, transparent 84%);
-  opacity: 0.55;
-  pointer-events: none;
+  content: none;
 }
 
 .start-hero::after {
