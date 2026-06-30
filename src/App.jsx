@@ -143,7 +143,7 @@ function App() {
 
   if (gameStatus === "start") {
     return (
-      <main className="app">
+      <main className="app app-start">
         <section className="shell shell-start">
           <GameNav />
           <StartScreen
