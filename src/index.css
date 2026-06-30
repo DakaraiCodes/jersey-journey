@@ -624,6 +624,71 @@ input:disabled {
   line-height: 1.45;
 }
 
+.run-stat-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.run-stat-strip div,
+.scouting-report-preview {
+  border: 1px solid rgba(226, 232, 240, 0.12);
+  border-radius: 13px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent),
+    rgba(3, 7, 13, 0.32);
+}
+
+.run-stat-strip div {
+  display: grid;
+  gap: 4px;
+  padding: 11px;
+}
+
+.run-stat-strip span,
+.scouting-report-preview span {
+  color: var(--muted);
+  font-size: 0.62rem;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.run-stat-strip strong,
+.scouting-report-preview strong {
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.scouting-report-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+}
+
+.scouting-report-preview div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.locked-hint-slots {
+  display: flex;
+  gap: 6px;
+}
+
+.locked-hint-slots span {
+  width: 26px;
+  height: 26px;
+  border: 1px solid rgba(45, 212, 191, 0.24);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(45, 212, 191, 0.08), rgba(246, 196, 83, 0.06)),
+    rgba(3, 7, 13, 0.4);
+}
+
 .mode-grid {
   display: grid;
   gap: 10px;
@@ -632,7 +697,9 @@ input:disabled {
 .mode-card {
   width: 100%;
   display: grid;
-  gap: 6px;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
   position: relative;
   border: 1px solid rgba(226, 232, 240, 0.13);
   border-radius: 15px;
@@ -640,12 +707,43 @@ input:disabled {
     linear-gradient(90deg, rgba(246, 196, 83, 0.06), transparent),
     rgba(3, 7, 13, 0.38);
   color: inherit;
-  padding: 15px 54px 15px 15px;
+  padding: 14px 54px 14px 14px;
   text-align: left;
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
-.mode-card span {
+.mode-emblem {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(246, 196, 83, 0.26);
+  border-radius: 12px;
+  color: var(--gold);
+  background:
+    linear-gradient(145deg, rgba(246, 196, 83, 0.14), rgba(45, 212, 191, 0.045)),
+    rgba(3, 7, 13, 0.46);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+}
+
+.mode-card.active .mode-emblem {
+  color: #07111c;
+  background:
+    radial-gradient(circle at 32% 22%, rgba(255, 255, 255, 0.5), transparent 28%),
+    linear-gradient(135deg, var(--orange), var(--gold));
+  border-color: rgba(246, 196, 83, 0.62);
+}
+
+.mode-card-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.mode-card-copy > span {
   color: var(--gold);
   font-size: 0.72rem;
   font-weight: 950;
@@ -653,12 +751,13 @@ input:disabled {
   text-transform: uppercase;
 }
 
-.mode-card strong {
+.mode-card-copy strong {
   color: #fff;
   font-size: 1rem;
+  line-height: 1.16;
 }
 
-.mode-card small {
+.mode-card-copy small {
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.4;
@@ -753,10 +852,10 @@ input:disabled {
   overflow: hidden;
   border-radius: 18px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 40%),
-    radial-gradient(circle at 50% 32%, rgba(246, 196, 83, 0.28), transparent 10rem),
-    radial-gradient(circle at 50% 70%, rgba(249, 115, 22, 0.18), transparent 18rem),
-    linear-gradient(150deg, #111827 0%, #070b12 54%, #020409 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.032), transparent 40%),
+    radial-gradient(circle at 28% 20%, rgba(246, 196, 83, 0.14), transparent 16rem),
+    radial-gradient(circle at 74% 58%, rgba(45, 212, 191, 0.11), transparent 19rem),
+    linear-gradient(150deg, #101724 0%, #070b12 55%, #020409 100%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     0 18px 50px rgba(0, 0, 0, 0.32);
@@ -780,7 +879,7 @@ input:disabled {
   position: absolute;
   left: 8%;
   right: 8%;
-  bottom: 178px;
+  bottom: 210px;
   height: 120px;
   pointer-events: none;
   border-radius: 999px;
@@ -806,18 +905,18 @@ input:disabled {
 
 .stage-content {
   min-width: 0;
-  min-height: 660px;
+  min-height: 668px;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 38px 28px 24px;
+  padding: 34px 28px 24px;
   text-align: center;
 }
 
 .stage-copy {
-  max-width: 650px;
+  max-width: 720px;
 }
 
 .eyebrow {
@@ -871,24 +970,47 @@ h1 {
   text-transform: uppercase;
 }
 
+.route-court-board {
+  width: min(760px, 100%);
+  min-width: 0;
+  position: relative;
+  display: grid;
+  gap: 16px;
+  margin: 24px auto 0;
+  border: 1px solid rgba(226, 232, 240, 0.12);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 50% 60%, rgba(45, 212, 191, 0.08), transparent 19rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.032), rgba(255, 255, 255, 0.01)),
+    rgba(3, 7, 13, 0.45);
+  padding: 14px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
 .card-spotlight {
-  width: min(520px, 100%);
-  min-height: 324px;
+  width: 100%;
+  min-height: 368px;
   position: relative;
   display: grid;
   place-items: center;
-  margin: 24px auto 18px;
+  overflow: hidden;
+  border: 1px solid rgba(246, 196, 83, 0.14);
+  border-radius: 14px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(6, 12, 21, 0.24), rgba(6, 12, 21, 0.74));
+  background-size: 42px 42px, 42px 42px, auto;
 }
 
 .court-lines {
   position: absolute;
-  width: 390px;
-  height: 210px;
-  bottom: 10px;
-  border: 1px solid rgba(246, 196, 83, 0.24);
-  border-bottom: 0;
-  border-radius: 210px 210px 0 0;
-  opacity: 0.8;
+  inset: 26px 28px;
+  border: 1px solid rgba(246, 196, 83, 0.2);
+  border-radius: 18px;
+  opacity: 0.92;
 }
 
 .court-lines::before,
@@ -902,37 +1024,40 @@ h1 {
 }
 
 .court-lines::before {
-  top: 76px;
-  width: 112px;
-  height: 112px;
+  top: 50%;
+  width: 118px;
+  height: 118px;
+  transform: translate(-50%, -50%);
 }
 
 .court-lines::after {
-  top: 120px;
-  width: 260px;
-  height: 76px;
-  border-bottom: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  height: auto;
+  border-width: 0 0 0 1px;
+  border-radius: 0;
 }
 
 .mystery-player-card {
-  width: 254px;
-  height: 304px;
+  width: 246px;
+  height: 292px;
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   padding: 18px;
   overflow: hidden;
   border: 1px solid rgba(246, 196, 83, 0.42);
-  border-radius: 22px;
+  border-radius: 18px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 28%),
-    radial-gradient(circle at 50% 35%, rgba(246, 196, 83, 0.34), transparent 7.4rem),
-    linear-gradient(158deg, rgba(249, 115, 22, 0.2), rgba(45, 212, 191, 0.06)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.085), transparent 28%),
+    radial-gradient(circle at 50% 36%, rgba(246, 196, 83, 0.24), transparent 7.2rem),
+    linear-gradient(158deg, rgba(249, 115, 22, 0.14), rgba(45, 212, 191, 0.05)),
     #070b12;
   box-shadow:
-    0 34px 72px rgba(0, 0, 0, 0.42),
-    0 0 0 9px rgba(246, 196, 83, 0.035),
-    0 0 60px rgba(249, 115, 22, 0.13),
+    0 30px 64px rgba(0, 0, 0, 0.38),
+    0 0 0 8px rgba(246, 196, 83, 0.03),
+    0 0 48px rgba(249, 115, 22, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
@@ -981,8 +1106,8 @@ h1 {
 }
 
 .card-question {
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   position: relative;
   z-index: 1;
   align-self: center;
@@ -999,7 +1124,7 @@ h1 {
     0 24px 50px rgba(0, 0, 0, 0.35),
     0 0 0 10px rgba(246, 196, 83, 0.08),
     0 0 0 21px rgba(45, 212, 191, 0.045);
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   font-weight: 950;
   line-height: 1;
 }
@@ -1074,13 +1199,12 @@ h1 {
 .team-card-section {
   width: 100%;
   min-width: 0;
-  margin-top: auto;
-  padding: 16px;
-  border: 1px solid rgba(226, 232, 240, 0.12);
-  border-radius: 18px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012)),
-    rgba(5, 9, 16, 0.72);
+    transparent;
 }
 
 .team-card-header {
@@ -1088,7 +1212,7 @@ h1 {
   align-items: end;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   text-align: left;
 }
 
@@ -1104,7 +1228,7 @@ h1 {
 .team-card-header h2 {
   margin: 0;
   color: #fff;
-  font-size: 1.12rem;
+  font-size: 1rem;
 }
 
 .team-scroll-actions {
@@ -1113,8 +1237,8 @@ h1 {
 }
 
 .team-scroll-actions button {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   display: grid;
   place-items: center;
   border: 1px solid rgba(246, 196, 83, 0.34);
@@ -1146,8 +1270,8 @@ h1 {
   position: absolute;
   z-index: 2;
   top: 0;
-  bottom: 8px;
-  width: 44px;
+  bottom: 7px;
+  width: 34px;
   pointer-events: none;
 }
 
@@ -1166,12 +1290,12 @@ h1 {
   min-width: 0;
   position: relative;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   justify-content: flex-start;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  padding: 6px 44px 14px;
-  scroll-padding-inline: 44px;
+  padding: 5px 34px 11px;
+  scroll-padding-inline: 34px;
   scroll-snap-type: x proximity;
   scrollbar-color: rgba(246, 196, 83, 0.78) rgba(148, 163, 184, 0.13);
   scrollbar-width: thin;
@@ -1181,9 +1305,9 @@ h1 {
   content: "";
   position: absolute;
   z-index: 0;
-  left: 58px;
-  right: 58px;
-  top: 76px;
+  left: 48px;
+  right: 48px;
+  top: 63px;
   height: 2px;
   border-radius: 999px;
   background:
@@ -1207,15 +1331,15 @@ h1 {
 }
 
 .mini-team-card {
-  min-width: 154px;
-  max-width: 154px;
-  min-height: 164px;
+  min-width: 138px;
+  max-width: 138px;
+  min-height: 118px;
   position: relative;
   z-index: 1;
   display: grid;
   align-content: start;
-  gap: 11px;
-  padding: 14px;
+  gap: 8px;
+  padding: 12px;
   overflow: hidden;
   border: 1px solid rgba(226, 232, 240, 0.2);
   border-radius: 13px;
@@ -1237,10 +1361,10 @@ h1 {
 .mini-team-card::before {
   content: "";
   position: absolute;
-  left: 82px;
-  top: 68px;
-  width: 12px;
-  height: 12px;
+  left: 72px;
+  top: 55px;
+  width: 10px;
+  height: 10px;
   border: 2px solid rgba(5, 9, 16, 0.96);
   border-radius: 999px;
   background: var(--teal);
@@ -1254,7 +1378,7 @@ h1 {
   position: absolute;
   left: 24px;
   right: 14px;
-  top: 47px;
+  top: 41px;
   height: 1px;
   background: linear-gradient(90deg, rgba(246, 196, 83, 0.5), transparent);
 }
@@ -1310,11 +1434,11 @@ h1 {
 }
 
 .mini-team-abbr {
-  width: 68px;
-  height: 62px;
+  width: 58px;
+  height: 48px;
   display: grid;
   place-items: center;
-  border-radius: 15px;
+  border-radius: 12px;
   color: #090d14;
   background:
     radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.56), transparent 30%),
@@ -1325,29 +1449,29 @@ h1 {
 }
 
 .mini-team-abbr span {
-  font-size: 1.02rem;
+  font-size: 0.94rem;
   font-weight: 950;
 }
 
 .mini-team-info {
   display: grid;
-  gap: 5px;
+  gap: 3px;
   text-align: left;
 }
 
 .mini-team-info strong {
   color: #fff;
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   line-height: 1.18;
 }
 
 .mini-team-info span {
   color: #a7b5c8;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
 }
 
 .stage-tip {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   color: var(--muted);
   font-size: 0.78rem;
   text-align: left;
@@ -2032,22 +2156,20 @@ h1 {
   }
 
   .card-spotlight {
-    min-height: 308px;
-    margin-top: 20px;
+    min-height: 322px;
   }
 
   .court-lines {
-    width: 280px;
-    height: 170px;
+    inset: 18px 14px;
   }
 
   .mystery-player-card {
-    width: 230px;
-    height: 286px;
+    width: 218px;
+    height: 270px;
   }
 
   .team-card-section {
-    padding: 12px;
+    padding: 0;
   }
 
   .team-card-header {
@@ -2065,8 +2187,8 @@ h1 {
   }
 
   .mini-team-card {
-    min-width: 142px;
-    max-width: 142px;
+    min-width: 132px;
+    max-width: 132px;
   }
 
   .scoreboard,

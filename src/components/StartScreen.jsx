@@ -6,7 +6,20 @@ const START_RULES = [
   { label: "Reveal", value: "0", note: "No points, next round unlocked" },
 ];
 
+const RUN_STATS = [
+  { label: "Rounds", value: "8" },
+  { label: "Max", value: "8000" },
+  { label: "Hint", value: "-150" },
+];
+
 const PACK_STOPS = ["BOS", "PHX", "ATL", "BKN"];
+
+const MODE_EMBLEMS = {
+  mixed: "MX",
+  easy: "EZ",
+  hard: "HD",
+  journeyman: "JM",
+};
 
 export function StartScreen({ selectedMode, onModeChange, onStartRun }) {
   const selectedRun = RUN_MODES.find((mode) => mode.id === selectedMode) ?? RUN_MODES[0];
@@ -78,6 +91,27 @@ export function StartScreen({ selectedMode, onModeChange, onStartRun }) {
           <p>{selectedRun.description}</p>
         </div>
 
+        <div className="run-stat-strip" aria-label="Run setup stats">
+          {RUN_STATS.map((stat) => (
+            <div key={stat.label}>
+              <span>{stat.label}</span>
+              <strong>{stat.value}</strong>
+            </div>
+          ))}
+        </div>
+
+        <div className="scouting-report-preview" aria-label="Scouting report preview">
+          <div>
+            <span>Scouting Report</span>
+            <strong>3 locked clues</strong>
+          </div>
+          <div className="locked-hint-slots" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+
         <div className="mode-grid">
           {RUN_MODES.map((mode) => {
             const isSelected = selectedMode === mode.id;
@@ -90,9 +124,14 @@ export function StartScreen({ selectedMode, onModeChange, onStartRun }) {
                 aria-pressed={isSelected}
                 onClick={() => onModeChange(mode.id)}
               >
-                <span>{mode.name}</span>
-                <strong>{mode.tagline}</strong>
-                <small>{mode.description}</small>
+                <span className="mode-emblem" aria-hidden="true">
+                  {MODE_EMBLEMS[mode.id]}
+                </span>
+                <span className="mode-card-copy">
+                  <span>{mode.name}</span>
+                  <strong>{mode.tagline}</strong>
+                  <small>{mode.description}</small>
+                </span>
               </button>
             );
           })}
