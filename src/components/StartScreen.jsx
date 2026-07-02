@@ -1,4 +1,9 @@
-import { RUN_MODES } from "../utils/game";
+import {
+  HINT_PENALTY,
+  MAX_ROUND_SCORE,
+  ROUND_COUNT,
+  RUN_MODES,
+} from "../utils/game";
 
 const ROUTE_STOPS = [
   { abbr: "BOS", rail: "East", tone: "green" },
@@ -8,9 +13,13 @@ const ROUTE_STOPS = [
 ];
 
 const RUN_STATS = [
-  { label: "Rounds", value: "8", note: "Fresh route every stop" },
-  { label: "Max Score", value: "8000", note: "Can you perfect it?" },
-  { label: "Hints Cost", value: "-150", note: "Use only when stuck" },
+  { label: "Rounds", value: String(ROUND_COUNT), note: "Fresh route every stop" },
+  {
+    label: "Max Score",
+    value: String(ROUND_COUNT * MAX_ROUND_SCORE),
+    note: "Can you perfect it?",
+  },
+  { label: "Hints Cost", value: `-${HINT_PENALTY}`, note: "Use only when stuck" },
 ];
 
 export function StartScreen({ selectedMode, onModeChange, onStartRun }) {

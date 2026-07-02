@@ -303,7 +303,7 @@ export const players = [
     teams: [
       { team: "Portland Trail Blazers", years: "2012-2023" },
       { team: "Milwaukee Bucks", years: "2023-2025" },
-      { team: "Portlant Trail Blazers", years: "2025-present"}
+      { team: "Portland Trail Blazers", years: "2025-present" },
     ],
     hints: [
       "Drafted from Weber State",
